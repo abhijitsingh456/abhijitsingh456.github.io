@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Journey — Timeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Work+Sans:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f5f2ec; --card:#ffffff; --line:#9aa6ae; --dot:#6d7a83;
+    --ink:#22262b; --ink-2:#565f68; --ink-3:#8c949c; --link:#1f6f8f;
+    --border:rgba(34,38,43,.12);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:"Work Sans",system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+  .page{max-width:1000px;margin:0 auto;padding:40px 20px 90px}
+
+  .resume{margin:0 0 26px;padding-bottom:22px;border-bottom:1px solid var(--border)}
+  .resume .name{font-family:"Fraunces",Georgia,serif;font-weight:600;
+    font-size:clamp(30px,6vw,44px);letter-spacing:.03em;text-transform:uppercase;margin:0}
+  .resume .contact{margin:10px 0 0;color:var(--ink-2);font-size:14.5px}
+  .resume .contact a{color:var(--link);text-decoration:underline;text-underline-offset:2px}
+  .resume .role{margin:5px 0 0;color:var(--ink-3);font-size:14px}
+
+  .intro{max-width:70ch;margin:0 0 30px;color:var(--ink-2);
+    font-size:clamp(15px,1.7vw,17px);line-height:1.7}
+  .intro b{color:var(--ink);font-weight:600}
+
+  .foot{margin-top:44px;padding-top:22px;border-top:1px solid var(--border);
+    color:var(--ink-3);font-size:13.5px;line-height:1.65;max-width:70ch}
+  .foot b{color:var(--ink-2);font-weight:600}
+  .card b,.m-body b{font-weight:600;color:inherit}
+
+  .top{display:flex;align-items:baseline;gap:14px;margin:0 0 8px}
+  .top h1{font-family:"Fraunces",Georgia,serif;font-size:26px;font-weight:600;margin:0}
+  .top .time{font-family:"Space Mono",monospace;font-size:12px;letter-spacing:.12em;
+    text-transform:uppercase;color:var(--ink-3)}
+
+  .tl{position:relative;margin-top:26px}
+  .wave{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;z-index:0}
+  .wave path{fill:none;stroke:var(--line);stroke-width:2;opacity:.8}
+
+  .row{position:relative;display:grid;grid-template-columns:1fr 1fr;column-gap:70px;
+    padding:16px 0;z-index:1}
+  .row .card{grid-column:1}
+  .row.right .card{grid-column:2}
+
+  .dot{position:absolute;width:12px;height:12px;border-radius:50%;
+    background:var(--bg);border:2px solid var(--dot);transform:translate(-50%,-50%);z-index:2}
+
+  .card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;
+    box-shadow:0 1px 2px rgba(34,38,43,.04),0 8px 22px rgba(34,38,43,.05)}
+  .card h2{font-family:"Fraunces",Georgia,serif;font-size:22px;font-weight:600;letter-spacing:.005em;
+    margin:0 0 10px;color:var(--ink)}
+  .card p{margin:0 0 8px;color:var(--ink-2);font-size:14.5px}
+  .card p:last-child{margin-bottom:0}
+  .card ul{margin:6px 0 10px;padding-left:18px;color:var(--ink-2);font-size:14.5px}
+  .card li{margin:3px 0}
+  .card ul ul{margin:2px 0 2px;color:var(--ink-3)}
+  .card .lo{color:var(--ink-3)}
+  .card a{color:var(--link);text-decoration:underline;text-underline-offset:2px;
+    font-family:"Space Mono",monospace;font-size:12px;word-break:break-all}
+  .card a:hover{text-decoration-thickness:2px}
+
+  @media (max-width:720px){
+    .row,.row.right{grid-template-columns:1fr}
+    .row .card,.row.right .card{grid-column:1;margin-left:34px}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="resume">
+    <p class="name">Abhijit Singh</p>
+    <p class="contact">+91 7004481294 · <a href="mailto:abhijitsingh456@gmail.com">abhijitsingh456@gmail.com</a> · <a href="https://linkedin.com/in/abhijitsingh456" target="_blank" rel="noopener">linkedin.com/in/abhijitsingh456</a></p>
+    <p class="role">Junior Engineering Associate — Steel Authority of India Limited</p>
+  </header>
+
+  <p class="intro">After <b>1,500+</b> (and counting) job applications — and almost as many attempts at explaining why my career trajectory looks the way it does: whether I'm experienced or a fresher, an actual tech guy or one only pretending to be, whether I did an online bachelor's because I couldn't get into a regular college or because it was the only way possible — and after burning through countless resume templates trying to answer it all, this is my best attempt at explaining it.</p>
+
+  <div class="top">
+    <h1>My Journey</h1>
+    <span class="time">Time ↓</span>
+  </div>
+
+  <div class="tl" id="tl">
+    <svg class="wave" id="wave" preserveAspectRatio="none"><path id="wavePath"/></svg>
+
+    <div class="row left">
+      <div class="card">
+        <h2>2016</h2>
+        <p>May – High School Completed (CBSE / Science / 75%)</p>
+        <p>Sept – Joined Steel Authority of India Limited (Full time)</p>
+        <p class="lo">Reason – Unfortunate family circumstances</p>
+      </div>
+    </div>
+
+    <div class="row right">
+      <div class="card">
+        <h2>2017 – 2020</h2>
+        <p>While working full time, tried pursuing higher education. Unsuccessful due to external factors.</p>
+        <ul>
+          <li>AMIE (concerns on validity / recognition)</li>
+          <li>SMU (change in course structure midway)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row left">
+      <div class="card">
+        <h2>2020</h2>
+        <p>IIT Madras launches its first online degree – BS in Data Science &amp; Applications</p>
+        <p>Jan 2021 – Enrolled in the first batch</p>
+        <p>Ultimate Goal – Acquire skills and switch to a respectable tech role</p>
+      </div>
+    </div>
+
+    <div class="row right">
+      <div class="card">
+        <h2>2021 – 2025</h2>
+        <p>Learnt a lot through the degree, developed passion for CS.</p>
+        <p><b>DSA</b>, <b>Database</b>, <b>Application Development</b>, <b>ML</b> and the now hot topics of <b>Deep Learning</b> &amp; <b>LLM</b>.</p>
+        <p>Learnt basics through small college projects:</p>
+        <ul>
+          <li>A <b>Flask</b> + <b>SQLite</b> + <b>JS</b> Grocery App</li>
+          <li>A <b>Kaggle</b> competition to predict Taxi Fares</li>
+          <li>Integrating <b>Google Chats</b> to an existing App</li>
+        </ul>
+        <p>Started <b>Leetcode</b> <b>DSA</b> – couldn't become an expert (effort still ongoing).<br>
+          <a href="https://leetcode.com/u/abhijitsingh456/" target="_blank" rel="noopener">leetcode.com/u/abhijitsingh456</a></p>
+        <p>To gain real world tech experience, started implementing at work what I learnt in college:</p>
+        <ul>
+          <li><b>Flask</b> App to create periodic reports</li>
+          <li><b>Flask</b> app to record inspection observations from department personnel</li>
+          <li class="lo">Projects actually being used, but nothing close to a real world production setting</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row left">
+      <div class="card">
+        <h2>2026</h2>
+        <p>April – Graduated (6.8 CGPA)</p>
+        <p>Job hunt begins – realized need more real world exposure &amp; lacking experience with relevant tech stack.</p>
+        <ul>
+          <li>Joins an early stage startup – learnt <b>Spring Boot</b>, <b>Postgres</b>, <b>Docker</b>, honed <b>Git</b> skills.</li>
+          <li>Starts building serious backend projects – to be used in current full time workplace:
+            <ul>
+              <li>A <b>Spring Boot</b> + <b>Postgres</b> + <b>RabbitMQ</b> application to record inspection observation, track compliance, generate reports – deployed to <b>AWS EC2</b> (using <b>GitHub Actions CI/CD</b>). Reducing significant reporting and report generation time.<br>
+                <a href="https://github.com/abhijitsingh456/bsl-safety-inspection" target="_blank" rel="noopener">github.com/abhijitsingh456/bsl-safety-inspection</a></li>
+              <li>A <b>Django</b> + <b>MySQL</b> + <b>Celery</b> + <b>Redis</b> application to fetch records from external cloud DB of over speeding vehicle registration nos. &amp; sync with current employee record – deployed to <b>AWS EC2</b>. Eliminating the error prone manual process of matching / record keeping.<br>
+                <a href="https://github.com/abhijitsingh456/safety-violations-app" target="_blank" rel="noopener">github.com/abhijitsingh456/safety-violations-app</a></li>
+              <li>A <b>Computer Vision</b> / <b>Python</b> / <b>OpenCV</b> project which tracks and captures moving steel coils on conveyor and integrated it with <b>Google Vision API</b> to auto extract batch no and other details handwritten over the coil.<br>
+                <a href="https://github.com/abhijitsingh456/cv-coil-reader" target="_blank" rel="noopener">github.com/abhijitsingh456/cv-coil-reader</a></li>
+            </ul>
+          </li>
+        </ul>
+        <p class="lo">Honest confession – Not a designated Software Engineer, the projects have largely (not entirely) been self initiatives, albeit it IS used for actual work purposes in day to day functioning. But also, that means I own each project end-to-end, so that's a plus ;)</p>
+        <p class="lo">Technologies I have working knowledge of but the required scale of my projects never warranted the use of – <b>Distributed Computing</b>, <b>Concurrency</b>, <b>Kubernetes</b>, <b>Kafka</b>.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="foot">
+    Although this website design was coded almost entirely with <b>Claude</b> (I'm a Backend guy, as you'd have known by now), <b>no word of any actual text on this page is AI generated</b>.
+  </footer>
+</div>
+
+<script>
+(function(){
+  var tl=document.getElementById('tl');
+  var svg=document.getElementById('wave');
+  var path=document.getElementById('wavePath');
+  var rows=tl.querySelectorAll('.row');
+
+  function catmull(points){
+    var d='M '+points[0][0].toFixed(1)+' '+points[0][1].toFixed(1);
+    for(var i=0;i<points.length-1;i++){
+      var p0=points[i-1]||points[i], p1=points[i], p2=points[i+1], p3=points[i+2]||p2;
+      var c1x=p1[0]+(p2[0]-p0[0])/6, c1y=p1[1]+(p2[1]-p0[1])/6;
+      var c2x=p2[0]-(p3[0]-p1[0])/6, c2y=p2[1]-(p3[1]-p1[1])/6;
+      d+=' C '+c1x.toFixed(1)+' '+c1y.toFixed(1)+' '+c2x.toFixed(1)+' '+c2y.toFixed(1)+' '+p2[0].toFixed(1)+' '+p2[1].toFixed(1);
+    }
+    return d;
+  }
+
+  function draw(){
+    var W=tl.clientWidth, H=tl.scrollHeight;
+    var mobile=window.matchMedia('(max-width:720px)').matches;
+
+    svg.setAttribute('viewBox','0 0 '+W+' '+H);
+    svg.setAttribute('width',W); svg.setAttribute('height',H);
+
+    // one anchor per card, sitting just off the card's inner edge (toward centre)
+    tl.querySelectorAll('.dot').forEach(function(n){n.remove();});
+    var tlBox=tl.getBoundingClientRect();
+    var anchors=[];
+    rows.forEach(function(r){
+      var card=r.querySelector('.card');
+      var cb=card.getBoundingClientRect();
+      var y=r.offsetTop + r.offsetHeight/2;
+      var x;
+      if(mobile){
+        x=22 + (r.classList.contains('right')?10:-8);
+      }else{
+        x=r.classList.contains('right')
+          ? (cb.left - tlBox.left) - 8     // right card → dot just left of it
+          : (cb.right - tlBox.left) + 8;   // left card  → dot just right of it
+      }
+      anchors.push([x,y]);
+    });
+
+    // build the flowing path: ease in from the top, thread the anchors, ease out the bottom
+    var pts=[[anchors[0][0], 0]].concat(anchors);
+    pts.push([anchors[anchors.length-1][0], H]);
+    path.setAttribute('d', catmull(pts));
+
+    // dots on the wave, right where it meets each card
+    anchors.forEach(function(a){
+      var dot=document.createElement('span');
+      dot.className='dot';
+      dot.style.left=a[0]+'px'; dot.style.top=a[1]+'px';
+      tl.appendChild(dot);
+    });
+  }
+
+  draw();
+  window.addEventListener('resize',draw);
+  window.addEventListener('load',draw);
+  if('fonts' in document){ document.fonts.ready.then(draw); }
+  if('ResizeObserver' in window){ new ResizeObserver(draw).observe(tl); }
+})();
+</script>
+</body>
+</html>
